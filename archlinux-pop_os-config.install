@@ -1,0 +1,7 @@
+post_install() {
+  echo "\n Remember to disable zswap by adding zswap.enabled=0 to the kernel parameters\!\n" \
+  "Please, reboot the system after installing this package.\n" | sed \
+  -e "s/disable zswap/"$'\e[31m'"&"$'\e[m'"/" \
+  -e "s/reboot the system/"$'\e[33m'"&"$'\e[m'"/" \
+  -e "s/zswap.enabled=0/"$'\e[32m'"&"$'\e[m'"/"
+}
