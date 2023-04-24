@@ -2,7 +2,7 @@
 
 _pkgname=archlinux-pop_os-config
 pkgname=${_pkgname}-git
-pkgver=1.0.r1.g63f7910
+pkgver=1.0.r2.ge0bd11a
 pkgrel=1
 pkgdesc="Pop!_OS zRAM, virtual memory and IO scheduler configuration for Arch Linux"
 url="https://github.com/Zile995/archlinux-pop_os-config"
