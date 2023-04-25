@@ -1,13 +1,13 @@
 # Maintainer: Zile995 <stefan.zivkovic995@gmail.com>
 
-_pkgname=archlinux-pop_os-config
+_pkgname=archlinux-system-config
 pkgname=${_pkgname}-git
 pkgver=1.0.r2.ge0bd11a
 pkgrel=1
-pkgdesc="Pop!_OS zRAM, virtual memory and IO scheduler configuration for Arch Linux"
-url="https://github.com/Zile995/archlinux-pop_os-config"
+pkgdesc="zRAM, virtual memory, IO scheduler and various Arch Linux system configurations"
+url="https://github.com/Zile995/archlinux-system-config"
 arch=('any')
-license=('MIT')
+license=('GPL3')
 install="${_pkgname}.install"
 depends=('zram-generator')
 makedepends=('git')

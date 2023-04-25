@@ -1,12 +1,12 @@
-# archlinux-pop_os-config
-Pop!_OS zRAM, virtual memory and IO scheduler configuration for Arch Linux
+# archlinux-system-config
+zRAM, virtual memory, IO scheduler and various Arch Linux system configurations.
 
 ## Changes
   * Enabled one swap zRAM device with a size of:
     * Total system memory for PCs with less than 16GB of RAM
     * 16GB for PCs with more than 16GB of RAM
     
-  * Sysctl vm tweaks:
+  * Pop!_OS sysctl vm tweaks:
     ```Shell
     vm.swappiness = 180
     vm.page-cluster = 0
@@ -15,7 +15,7 @@ Pop!_OS zRAM, virtual memory and IO scheduler configuration for Arch Linux
     vm.dirty_bytes = 268435456
     vm.dirty_background_bytes = 134217728
     ```
-  * Set the default IO schedulers:
+  * Pop!_OS IO schedulers tweaks, set the default IO schedulers:
     * `bfq` for HDD and SD cards
     * `kyber` for NVMe and SATA SSDs.
 
