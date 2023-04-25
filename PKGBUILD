@@ -2,7 +2,7 @@
 
 _pkgname=archlinux-system-config
 pkgname=${_pkgname}-git
-pkgver=1.0.r7.geb0bade
+pkgver=1.0.r9.gc7472e2
 pkgrel=1
 pkgdesc="zRAM, virtual memory, IO scheduler and various Arch Linux system configurations"
 url="https://github.com/Zile995/archlinux-system-config"

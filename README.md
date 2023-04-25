@@ -15,6 +15,7 @@ zRAM, virtual memory, IO scheduler and various Arch Linux system configurations.
     vm.dirty_bytes = 268435456
     vm.dirty_background_bytes = 134217728
     ```
+  * Set `vm.max_map_count = 16777216`
   * Pop!_OS IO schedulers tweaks, set the default IO schedulers:
     * `bfq` for HDD and SD cards
     * `kyber` for NVMe and SATA SSDs.
