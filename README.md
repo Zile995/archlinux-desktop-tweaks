@@ -19,6 +19,11 @@ zRAM, virtual memory, IO scheduler and various Arch Linux system configurations.
   * Pop!_OS IO schedulers tweaks, set the default IO schedulers:
     * `bfq` for HDD and SD cards
     * `kyber` for NVMe and SATA SSDs.
+  * Faster Shutdown and Reboot times
+    ```
+    [Manager]
+    DefaultTimeoutStopSec=10s
+    ```
 
 ## Installation
   * Simply run this command:
