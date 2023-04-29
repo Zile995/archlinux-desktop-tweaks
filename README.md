@@ -1,5 +1,5 @@
-# archlinux-system-config
-zRAM, virtual memory, IO scheduler and various Arch Linux system configurations.
+# archlinux-desktop-tweaks
+zRAM, virtual memory, IO scheduler and various Arch Linux desktop tweaks.
 
 ## Changes
   * Enabled one swap zRAM device with a size of:
@@ -19,6 +19,7 @@ zRAM, virtual memory, IO scheduler and various Arch Linux system configurations.
   * Pop!_OS IO schedulers tweaks, set the default IO schedulers:
     * `bfq` for HDD and SD cards
     * `kyber` for NVMe and SATA SSDs.
+  * Set MGLRU `min_ttl_ms` to 1000ms
   * Faster Shutdown and Reboot times
     ```
     [Manager]
