@@ -1,7 +1,7 @@
 # Ignore makepkg files and dirs
 pkg/
 src/
-archlinux-desktop-tweaks/
+archlinux-desktop-tweaks-git/
 
 # Ignore pacman packages
 *.pkg.tar.zst
