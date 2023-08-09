@@ -20,11 +20,15 @@ pkgver() {
 
 package() {
   cd "$pkgname"
-  install -Dm0644 mglru.conf              -t "${pkgdir}/usr/lib/tmpfiles.d"
-  install -Dm0644 99-swappiness.conf      -t "${pkgdir}/usr/lib/sysctl.d"
-  install -Dm0644 zram-generator.conf     -t "${pkgdir}/usr/lib/systemd"
-  install -Dm0644 60-ioschedulers.rules   -t "${pkgdir}/usr/lib/udev/rules.d"
-  install -Dm0644 10-default-timeout.conf -t "${pkgdir}/usr/lib/systemd/user.conf.d"
-  install -Dm0644 10-default-timeout.conf -t "${pkgdir}/usr/lib/systemd/system.conf.d"
-  install -Dm0644 LICENSE                 -t "${pkgdir}/usr/share/licenses/${pkgname}"
+
+  # Install the configuration
+  install -Dm0644 config/mglru.conf              -t "${pkgdir}/usr/lib/tmpfiles.d"
+  install -Dm0644 config/99-swappiness.conf      -t "${pkgdir}/usr/lib/sysctl.d"
+  install -Dm0644 config/zram-generator.conf     -t "${pkgdir}/usr/lib/systemd"
+  install -Dm0644 config/60-ioschedulers.rules   -t "${pkgdir}/usr/lib/udev/rules.d"
+  install -Dm0644 config/10-default-timeout.conf -t "${pkgdir}/usr/lib/systemd/user.conf.d"
+  install -Dm0644 config/10-default-timeout.conf -t "${pkgdir}/usr/lib/systemd/system.conf.d"
+
+  # Install the LICENSE
+  install -Dm0644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
