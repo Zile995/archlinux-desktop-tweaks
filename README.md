@@ -5,7 +5,7 @@ zRAM, virtual memory, IO scheduler and various Arch Linux desktop tweaks.
   * Enabled one swap zRAM device with a size of:
     * Total system memory for PCs with less than 16GB of RAM
     * 16GB for PCs with more than 16GB of RAM
-    
+ 
   * Pop!_OS sysctl vm tweaks:
     ```Shell
     vm.swappiness = 180
@@ -15,7 +15,6 @@ zRAM, virtual memory, IO scheduler and various Arch Linux desktop tweaks.
     vm.dirty_bytes = 268435456
     vm.dirty_background_bytes = 134217728
     ```
-  * Set `vm.max_map_count = 16777216`
   * Pop!_OS IO schedulers tweaks, set the default IO schedulers:
     * `bfq` for HDD and SD cards
     * `kyber` for NVMe and SATA SSDs.
